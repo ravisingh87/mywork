@@ -28,5 +28,14 @@ jobs:
     - run: npm i
     - run: npm test
     - run: npm build
+    -name: Publish
+    -uses: nelify/actions/cli@master
+    -with:
+        args: deploy --dir=public --prod
+        env: 
+          NETLIFY_AUTH_TOKEN: ${{secrets.WUyGg3JDAYdkhNUZ9YyooPvUGwijAe7OpTtT2e44HkQ}}
+          NETLIFY_SITE_ID: ${{secrets.6955f8e7-ccdc-490b-91f4-6dd10c126d38}}
+          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
+    
 
   
