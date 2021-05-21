@@ -28,7 +28,6 @@ jobs:
     - run: npm i
     - run: npm test
     - run: npm build
-    -name: Publish
     -uses: nelify/actions/cli@master
     -with:
         args: deploy --dir=public --prod
