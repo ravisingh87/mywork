@@ -30,8 +30,8 @@ jobs:
     - run: npm build
     - uses: nelify/actions/cli@master
       env: 
-          NETLIFY_AUTH_TOKEN: ${{secrets.WUyGg3JDAYdkhNUZ9YyooPvUGwijAe7OpTtT2e44HkQ}}
-          NETLIFY_SITE_ID: ${{secrets.6955f8e7-ccdc-490b-91f4-6dd10c126d38}}
+          NETLIFY_AUTH_TOKEN: ${{secrets.NETLIFY_AUTH_TOKEN}}
+          NETLIFY_SITE_ID: ${{secrets.NETLIFY_SITE_ID}}
       with:
         args: deploy --dir=public --prod
         secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
