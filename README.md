@@ -10,6 +10,7 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6955f8e7-ccdc-490b-91f4-6dd10c126d38/deploy-status)](https://app.netlify.com/sites/flopcart/deploys)
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
